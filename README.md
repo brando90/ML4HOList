@@ -27,5 +27,5 @@ PyTorch: https://pytorch.org/docs/stable/_modules/torch/utils/data/dataloader.ht
 https://pytorch.org/docs/stable/data.html (docs)
 
 
-To transform the prove logs into Pytorch required data format, we import tensorflow and pytorch in the same program and then read the data by tensorflow then transform it to PyTorch applicable format. Here, in order to make the we mainly take advantage of tensorflow’s data module and DataLoader in torch.utils.data module. Please go to the data_transformation.py file for implementation details. 
+To transform the prove logs into Pytorch required data format, we import tensorflow and pytorch in the same program and then read the data by tensorflow then transform it to PyTorch applicable format. Here, in order to make the we mainly take advantage of tensorflow’s data module and then transfrom into pytorch.Tensors (hopefully, DataLoader in torch.utils.data module). Please go to the transformation part for implementation details. 
 
