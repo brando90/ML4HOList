@@ -1,8 +1,9 @@
 # ML4TP
 
+# HOList Data
 HOList benchmark provide theorem prove logs in two formats (protocol buffer ended with .textpb, tfrecordio – a data type of TensorFlow) so if researchers want to start to train their own models, use tfrecordio file is very direct. Here, we focus on getting the right data to feed into our pipeline. Due to some similarity between pytorch and tensorflow, hopefully we can transform tfrecordio data into pytorch data. 
 
-To get the original prove log data:
+1.To get the original prove log data:
 -	Original Theorem Database 
 Run the following 2 lines:
 wget https://storage.googleapis.com/deepmath/deephol.zip -O /tmp/deephol.zip
@@ -16,6 +17,7 @@ mkdir $HOME/deephol-data
 gsutil -m cp -R gs://deepmath $HOME/deephol-data
 	the data are available as proof logs in $HOME/deephol-data/ folder. 
 	
+2. Data transformation from TensorFlow to PyTorch
 (For details about data format transformation, please refer tensorflow and pytorch docs and also HOL Light and Coq ITPs docs & tutorials )
 Some references can be found here: 
 This is about how to transform tensorflow data into PyTorch: https://discuss.pytorch.org/t/read-dataset-from-tfrecord-format/16409/3 
