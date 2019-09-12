@@ -21,8 +21,8 @@ gsutil -m cp -R gs://deepmath $HOME/deephol-data
 (For details about data format transformation, please refer tensorflow and pytorch docs and also HOL Light and Coq ITPs docs & tutorials )
 Some references can be found here: 
 This is about how to transform tensorflow data into PyTorch: https://discuss.pytorch.org/t/read-dataset-from-tfrecord-format/16409/3 
-Some related codes: https://github.com/pgmmpk/tfrecord 
-TFRecords: https://www.tensorflow.org/tutorials/load_data/tf_records 
+Some related codes: https://github.com/pgmmpk/tfrecord \n
+TFRecords: https://www.tensorflow.org/tutorials/load_data/tf_records \n
 PyTorch: https://pytorch.org/docs/stable/_modules/torch/utils/data/dataloader.html (code)
 https://pytorch.org/docs/stable/data.html (docs)
 
