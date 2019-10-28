@@ -1,0 +1,67 @@
+# this is randomly selected from the proof data ...
+nodes {   
+    goal {     
+        conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun ?0 (bool)) P) (v ?0 x))) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun ?0 (bool)) (bool)) ?) (l (v ?0 x) (a (v (fun ?0 (bool)) P) (v ?0 x))))) (v (bool) Q)))"     tag: THEOREM     fingerprint: 3716526260997458320   
+        }
+           proofs {     tactic: "ITAUT_TAC"     result: SUCCESS     closed: true   }
+              status: PROVED }
+theorem_in_database {   
+    conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) =) (a (c (fun (fun ?0 (bool)) (bool)) !) (l (v ?0 x) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (v (fun ?0 (bool)) P) (v ?0 x))) (v (bool) Q))))) (a (a (c (fun (bool) (fun (bool) (bool))) ==>) (a (c (fun (fun ?0 (bool)) (bool)) ?) (l (v ?0 x) (a (v (fun ?0 (bool)) P) (v ?0 x))))) (v (bool) Q)))"   tag: THEOREM   fingerprint: 3716526260997458320 } 
+
+
+nodes {   
+    goal {     
+        conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (v (bool) p)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (v (bool) r))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (v (bool) r))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (v (bool) r)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) r))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) p))) (v (bool) p))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q)))))))"     
+        tag: THEOREM     fingerprint: 2811381786271539603   
+        }   
+        proofs {     tactic: "ITAUT_TAC"     result: SUCCESS     closed: true   }   
+        status: PROVED } 
+theorem_in_database {   conclusion: "(a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (v (bool) p)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q))) (v (bool) r))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (v (bool) r))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (v (bool) r)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) q)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) r))))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) p))) (v (bool) p))) (a (a (c (fun (bool) (fun (bool) (bool))) =) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q)))) (a (a (c (fun (bool) (fun (bool) (bool))) /\\) (v (bool) p)) (v (bool) q)))))))"   
+        tag: THEOREM   fingerprint: 2811381786271539603 }
+
+
+
+"""
+Every line in .pbtxt files records an independent proof data. Generally we will need some (not less than one) nodes to prove one theorem ...
+Here is an abstract proof data ... We need to think about how to make the use and generate the same data by our own program...
+What's the usage of "term" in theorem proving procedure ...
+"""
+
+nodes{
+    goal{
+        conclusion: "string to show the goal"   
+        tag:THEOREM
+        fingerprint: 1706902491677675257  # I don't know how the fingerprint was generated ... and what it represents ...
+    }
+    proofs{
+        tactic: "X_GEN_TAC"       # the tactic is from the tactic list and there should be some 
+        parameters {       parameter_type: TERM       term: "(v A x)"     }
+        subgoals{
+            conclusion: "string to show the goal"
+            tag:goal
+            fingerprint: 4483704731141321429 # I don't know how the fingerprint was generated ...
+        }
+        result: SUCCESS     
+        closed: true   }   
+    status: PROVED
+}
+
+nodes{
+    goal:{
+        conclusion: ""
+        tag:
+        fingerprint: XXXXXXXXXX
+    }
+    proofs{
+        tactic: ""
+        parameters {
+            conclusion: ""
+            tag: goal
+            fingerprint:
+        }
+        result: SUCCESS
+        closed: true
+    }
+    status: PROVED
+}
+
