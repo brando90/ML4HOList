@@ -90,9 +90,31 @@ class BatchWrapper:
         return len(self.dl)
 
 #### then make the data batch which is able to be input directly ...
+train_batch = BatchWrapper(train_iter, "goal", ["tactic"])
+valid_batch = BatchWrapper(val_iter, "goal", ["tactic"])
+test_batch = BatchWrapper(test_iter, "goal", None)
 
 
 
+# Here we create the network for prediction task ... 
+# For complete replication, refer the code snippets here ( https://github.com/tensorflow/deepmath/blob/master/deepmath/deephol/train/architectures.py ) 
+class Baseline_Model():
+    def __init__():
+        self.embedding = ,
+        self.encoder = ,
+        self.linear_layers = ,
+        self.predictor = ,
+    def forward():
+        # ...
+        output = self.predictor()
+        return output 
 
+
+def main():
+        return 
+
+
+if __name__ == '__main__':
+        main()
 
 
